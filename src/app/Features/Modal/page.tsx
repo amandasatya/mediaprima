@@ -35,7 +35,7 @@ export default function ModalPage() {
   children: (
     <div className="w-full overflow-x-auto">
       <Table
-  size="medium"
+  size="middle"
   bordered
   columns={ContactColumns}
   dataSource={ContactData}
