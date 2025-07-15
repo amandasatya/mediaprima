@@ -1,7 +1,12 @@
 "use client";
 import React, { use } from "react";
-import { Button, Modal, Tabs, TabsProps, Table, Tag  } from "antd";
-import { AddressColumns, AddressData, ContactColumns, ContactData } from "@/data/data";
+import { Button, Modal, Tabs, TabsProps, Table, Tag } from "antd";
+import {
+  AddressColumns,
+  AddressData,
+  ContactColumns,
+  ContactData,
+} from "@/data/data";
 
 export default function ModalPage() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -19,51 +24,50 @@ export default function ModalPage() {
     console.log(key);
   };
 
-
-
-     const items: TabsProps['items'] = [
-  {
-    key: '1',
-    label: 'Address',
-    children: <div>
-      <Table columns={AddressColumns} dataSource={AddressData} />
-    </div>,
-  },
-  {
-  key: '2',
-  label: 'Contact',
-  children: (
-    <div className="w-full overflow-x-auto">
-      <Table
-  size="middle"
-  bordered
-  columns={ContactColumns}
-  dataSource={ContactData}
-  pagination={false}
-/>
-
-    </div>
-  ),
-},
-  {
-    key: '3',
-    label: 'Groups',
-    children: 'Content of Tab Pane 3',
-  },
-  {
-    key: '4',
-    label: 'Material list',
-    children: 'Content of Tab Pane 4',
-  },
-  {
-    key: '5',
-    label: 'Others',
-    children: 'Content of Tab Pane 5',
-  },
-];
+  const items: TabsProps["items"] = [
+    {
+      key: "1",
+      label: "Address",
+      children: (
+        <div>
+          <Table columns={AddressColumns} dataSource={AddressData} />
+        </div>
+      ),
+    },
+    {
+      key: "2",
+      label: "Contact",
+      children: (
+        <div className="w-full overflow-x-auto">
+          <Table
+            size="middle"
+            bordered
+            columns={ContactColumns}
+            dataSource={ContactData}
+            pagination={false}
+          />
+        </div>
+      ),
+    },
+    {
+      key: "3",
+      label: "Groups",
+      children: "Content of Tab Pane 3",
+    },
+    {
+      key: "4",
+      label: "Material list",
+      children: "Content of Tab Pane 4",
+    },
+    {
+      key: "5",
+      label: "Others",
+      children: "Content of Tab Pane 5",
+    },
+  ];
 
   return (
-    <div className="flex justify-center items-center" >
+    <div className="flex justify-center items-center">
       <Button type="primary" onClick={showModal}>
         New Supplier
       </Button>
@@ -110,7 +114,7 @@ export default function ModalPage() {
             </div>
           </div>
           <div>
-            <Tabs defaultActiveKey="1" items={items} onChange={onChange}  />;
+            <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
           </div>
         </div>
       </Modal>

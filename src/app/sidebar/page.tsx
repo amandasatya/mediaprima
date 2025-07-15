@@ -32,7 +32,7 @@ const items: MenuItem[] = [
   },
   {
     key: "sub1",
-    icon: <FontAwesomeIcon icon="fa-solid fa-users" />,
+    icon: <FontAwesomeIcon icon={faUsers} />,
     label: "Supplier Management",
     children: [
       { key: "2", label: "Dashboard" },
@@ -84,7 +84,7 @@ export default function Sidebar() {
     <div className="flex flex-col h-screen justify-between">
       <div>
         <div className="flex items-center justify-start p-5 pl-7 gap-5  bg-white">
-          <FontAwesomeIcon icon="fa-solid fa-users" />
+          <FontAwesomeIcon icon={faUsers} />
           <h1> alisa</h1>
         </div>
         <Menu
@@ -102,7 +102,12 @@ export default function Sidebar() {
           <h1>Help & Support</h1>
         </div>
         <div className="flex justify-start items-center bg-white">
-          <Menu style={{ width: 256 }} mode={mode} theme={theme} items={Configurations} />
+          <Menu
+            style={{ width: 256 }}
+            mode={mode}
+            theme={theme}
+            items={Configurations}
+          />
         </div>
       </div>
     </div>
