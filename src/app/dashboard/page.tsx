@@ -167,7 +167,7 @@ export default function Dashboard() {
       <div className="flex justify-between p-2">
         <h1 className="p-2">Supplier list</h1>
         <div className="flex gap-2 bg-slate-300 p-2 justify-center items-center rounded-lg ">
-          <FontAwesomeIcon icon="fa-solid fa-users" />
+          <FontAwesomeIcon icon={faUsers} />
           <ModalPage />
         </div>
       </div>
@@ -177,7 +177,7 @@ export default function Dashboard() {
           <h1>total supplier</h1>
           <div className="flex justify-between items-start">
             <h1>1869</h1>
-            <FontAwesomeIcon icon="fa-solid fa-users" />
+            <FontAwesomeIcon icon={faUsers} />
           </div>
           <div className="flex gap-2">
             <LineChartOutlined />
@@ -188,7 +188,7 @@ export default function Dashboard() {
           <h1>new supplier</h1>
           <div className="flex justify-between items-start">
             <h1>1869</h1>
-            <FontAwesomeIcon icon="fa-solid fa-users" />
+            <FontAwesomeIcon icon={faUsers} />
           </div>
           <div className="flex gap-2">
             <LineChartOutlined />
@@ -199,7 +199,7 @@ export default function Dashboard() {
           <h1>avg cost per supplier</h1>
           <div className="flex justify-between items-start">
             <h1>1869</h1>
-            <FontAwesomeIcon icon="fa-solid fa-users" />
+            <FontAwesomeIcon icon={faUsers} />
           </div>
           <div className="flex gap-2">
             <LineChartOutlined />
@@ -210,7 +210,7 @@ export default function Dashboard() {
           <h1>blocked supplier</h1>
           <div className="flex justify-between items-start">
             <h1>1869</h1>
-            <FontAwesomeIcon icon="fa-solid fa-users" />
+            <FontAwesomeIcon icon={faUsers} />
           </div>
           <div className="flex gap-2">
             <LineChartOutlined />
@@ -242,14 +242,14 @@ export default function Dashboard() {
         </div>
         <div className="flex gap-2">
           <div className="flex gap-2 items-center bg-white p-2 rounded-lg">
-            <FontAwesomeIcon icon="fa-solid fa-right-from-bracket" />
+            <FontAwesomeIcon icon={faRightFromBracket} />
             <button>export</button>
           </div>
           <div className="flex gap-2 items-center  p-2 rounded-lg">
-            <FontAwesomeIcon icon="fa-solid fa-table-list" />
+            <FontAwesomeIcon icon={faRightFromBracket} />
           </div>
           <div className="flex gap-2 items-center  p-2 rounded-lg">
-            <FontAwesomeIcon icon="fa-solid fa-bars" />
+            <FontAwesomeIcon icon={faRightFromBracket} />
           </div>
         </div>
       </div>
